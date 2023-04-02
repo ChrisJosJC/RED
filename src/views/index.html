@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Radio Estilo de Dios</title>
+    <script type="module" defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="header_text">AL ESTILO DE DIOS</h1>
+      <p>Bendición sonora para tu alma!</p>
+      <button class="suscribe">¡Suscribirme a esta radio!</button>
+    </main>
+    <!-- Programas -->
+    <section>
+      <article>
+        <h2 class="header_text">Al estilo de Dios</h2>
+      <p>Producido y conducido por los esposos Cristian Jean y Juana Carty es un programa de predicación y enseñanza de la Palabra de Dios enfocado en la manera particular y única de la soberanía y el poder de Dios.</p>
+      <button class="suscribe">¡Suscribirme a esta radio!</button>
+
+      </article>
+      <article>
+        <h2 class="header_text">Balsamo de Vida</h2>
+      <p>Bálsamo  de Vida es un devocional diario producido por Rosmery Reid. Este es un programa corto de apenas cinco minutos. Es una verdadera bendición mañanera basado en temas bíblicos con aplicación a la vida diaria  narrados de forma magistral por su conductora.</p>
+      <button class="suscribe" data-program="10:00:00-6">¡Suscribirme a esta radio!</button>
+
+      </article>
+      <article>
+        <h2 class="header_text">Salud al dia</h2>
+      <p>Escuche importantes orientaciones médicas y de salud con la doctora Greysi Stevens y sus invitados. La medicina y la fe se encuentran en este programa para poner su SALUD AL DÍA.</p>
+      <button class="suscribe" data-program="17:39:00-0">¡Suscribirme a esta radio!</button>
+
+      </article>
+      <article>
+        <h2 class="header_text">Analizando y comentando las escrituras</h2>
+      <p>Dos horas diarias de Lunes a Sábado son el desayuno espiritual que le brindan los pastores Rhina Griffith y José Adames para iniciar el día con una dieta espiritual balanceada y enfrentar los desafíos con determinación.</p>
+      <button class="suscribe" data-program="17:27:00-0">¡Suscribirme a esta radio!</button>
+
+      </article>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="text">
+        <span id="radio_label"></span>
+        <span>Oyentes en vivo: <span id="label_listeners"></span></span>
+      </div>
+      <i
+        id="playButton"
+        class="fas fa-solid fa-play fa-beat-fade"
+      ></i>
+    </footer>
+    <!-- Audio -->
+    <audio id="miniplayer" preload="auto">
+      <source src="https://c11.radioboss.fm:8314/stream" />
+    </audio>
+    <!-- Iconos -->
+    <script
+      src="https://kit.fontawesome.com/3f1ffa954b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
