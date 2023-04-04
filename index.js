@@ -4,7 +4,8 @@ const express = require('express');
 const morgan = require('morgan');
 const app = express()
 const path = require("path")
-const PORT = 3000 || 80
+const PORT = process.env.PORT || 3000;
+
 
 // Middlewares
 
