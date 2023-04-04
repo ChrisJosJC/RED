@@ -19,4 +19,4 @@ app.use(require('./src/routes/index'))
 // Static content
 app.use(express.static(path.join(__dirname, '/src/views')))
 
-app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
