@@ -4,6 +4,7 @@ const express = require('express');
 const morgan = require('morgan');
 const app = express()
 const path = require("path")
+const PORT = 3000 || 80
 
 // Middlewares
 
@@ -17,5 +18,5 @@ app.use(require('./src/routes/index'))
 // Static content
 app.use(express.static(path.join(__dirname, '/src/views')))
 
-app.listen(3000)
+app.listen(PORT)
 console.log("Starting server...");

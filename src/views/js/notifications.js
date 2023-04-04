@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll(".suscribe");
 const PUBLIC_KEY =
-  "BJBHqnQg-bG79IwR9M2URASAli3cSkFASNHMUoGPi5AZaNvVcN4LaavDXHZLQQhNPyqgnJGbsgFcwuOPX3oL-fQ";
+  "BEXQ3pOt1MMDeNr5dVHXR-DOZ959dvIIMFQ9yNlW28LhdCyqJjR-1duwj-db3pyvk_wa7F84DjhLW4oAd28mGw4";
 
 function Notify() {
   console.log("New Service Worker");
