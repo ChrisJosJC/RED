@@ -12,10 +12,10 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
 // Routes
-app.use(require('./routes/index'))
+app.use(require('./src/routes/index'))
 
 // Static content
-app.use(express.static(path.join(__dirname, 'views')))
+app.use(express.static(path.join(__dirname, '/src/views')))
 
 app.listen(3000)
 console.log("Starting server...");
