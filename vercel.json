@@ -2,7 +2,7 @@
     "version": 2,
     "name":"red",
     "builds": [
-      { "src": "index.js", "use": "@now/node" }
+      { "src": "index.js", "use": "@node/vercel" }
     ],
     "routes": [
       { "src": "/(.*)", "dest": "index.js" }
