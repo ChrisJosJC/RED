@@ -10,9 +10,16 @@ function showNotification(title = "", body = "", image = "/assets/bg-mic.jpg") {
   });
 }
 
-self.addEventListener('message', (event) => {
-  console.log("Tu id de cliente es:",event.data)
-});
+onmessage = function(e) {
+  console.log('Worker: Message received from main script', e.data);
+  self.clientId = e.data.clientId
+  this.fetch("/getDataUsers")
+    .then(res => res.json())
+    .then(res => data = res)
+    .catch(error => console.error(error))
+
+    console.log("Aqui tus datos", data);
+}
 
 self.addEventListener("active", ()=>{
   console.log("Service Worker is working!");
@@ -38,18 +45,28 @@ setInterval(() => {
   }
 }, 1000);
 
-// Cache
+// Staled code
 
-caches.open("cache-v1.1").then((cache) => {
-  cache.add("/index.html");
-  cache.add("/style/style.css");
-  cache.add("/assets/bg-mic.jpg");
-  cache.addAll([
-    "/index.html",
-    "/style/style.css",
-    "/js/main.js",
-    "/assets/bg-mic.jpg",
-    "/assets/fonts/Montserrat.woff2",
-    "/assets/fonts/Poppins-Black.woff2",
-  ]);
+// SW Version
+const version = '1.2';
+
+// Static Cache - App Shell
+const appAssets = [
+  "/index.html",
+  "/style/main.css",
+  "/style/style.css",
+  "/js/main.js",
+  "/assets/bg-mic.jpg",
+  "/assets/fonts/Montserrat.woff2",
+  "/assets/fonts/Poppins-Black.woff2",
+];
+
+
+// SW Install
+self.addEventListener( 'install', e => {
+    e.waitUntil(
+        caches.open( `static-${version}` )
+            .then( cache => cache.addAll(appAssets) )
+    );
 });
+
