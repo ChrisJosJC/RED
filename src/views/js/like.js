@@ -2,7 +2,7 @@
 const section = document.querySelector("section")
 let isLiked = false
 
-function giveLike(stateOne, stateTwo) {
+function giveLike() {
     section.addEventListener("click", e => {
         isLiked = !isLiked
         // console.log(e.target.classList["like"])
@@ -10,7 +10,7 @@ function giveLike(stateOne, stateTwo) {
             if (isLiked) {
                 e.target.style.color ='red' 
             } else {
-                e.target.style.color = 'black'
+                e.target.className
             }
         }
     } )

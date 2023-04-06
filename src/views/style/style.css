@@ -1,72 +1,59 @@
 @import url("./main.css");
 
-main{
-    text-align: center;
+main {
+  text-align: center;
 }
 
-main>p{
-    margin-top: 0;
-    margin-bottom: 25px;
+main > p {
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
+.text {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
 
-#playButton{
-    padding-bottom: 10px;
-    font-size: 1.5rem;
-    margin-top: 5px;
-    color: #e12424;
-    cursor: pointer;
+#playButton {
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #e12424;
+  cursor: pointer;
 }
 
-article{
-    background-color: #f2cc8f85;
-    backdrop-filter: blur(4px);
+article {
+  background-color: #f2cc8f85;
+  backdrop-filter: blur(4px);
 }
 
-article:hover > p {
-    -webkit-line-clamp: 6;
-    line-clamp: 6;
-    height: auto;
-    font-size: 1.2rem;
+article:focus > p {
+  -webkit-line-clamp: 6;
+  font-size: 1.1rem;
 }
 
-
-article>h2, h1{
-    font-family: "Poppins";
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 0;
+article > h2,
+h1 {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 0;
 }
 
-article > p{
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    height: 90px;
-     overflow: hidden;
-    /* text-overflow: ellipsis; */
+article > p {
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 90px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
 }
 
-section{
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
-    gap: 10px;
-    position: relative;
-}
-
-.like{
-    font-size: 1.4rem;
-    transition: all .5s;
-    cursor: pointer;
-}
-
-.like:hover{
-    color: #e124246f;
-    transform: scale(1.2);
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  position: relative;
 }

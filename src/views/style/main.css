@@ -1,92 +1,91 @@
-:root{
-    --purple: #561643;
-    --pink: #dd4a4a;
-    --red-normal: #e12424;
-    --red-dark: #950c0c;
-    --beige: #f2cc8f;
+:root {
+  --purple: #561643;
+  --pink: #dd4a4a;
+  --red-normal: #e12424;
+  --red-dark: #950c0c;
+  --beige: #f2cc8f;
 }
 
 @font-face {
-    font-family: "Poppins";
-    src: url("/assets/fonts/Poppins-Black.ttf");
-    font-weight: bold;
-  }
-  
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Black.woff2");
+  font-weight: bold;
+}
+
 @font-face {
-    font-family: "Montserrat";
-    src: url("/assets/fonts/Montserrat.ttf");
-  }
-  
-
-*{
-    box-sizing: border-box;
-    font-family: Montserrat;
-    line-height: 1.4;
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat.woff2");
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url('../assets/bg-mic.jpg');
-    background-position: right top;
-    background-color: #5616439d;
-    background-blend-mode: lighten;
-    margin-bottom: 80px;
+* {
+  box-sizing: border-box;
+  font-family: Montserrat;
+  line-height: 1.4;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    color: white ;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    width: 100svw;
-    padding: 10px;
-    padding-inline: 15px;
-    box-sizing: border-box;
-    height: 70px;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/bg-mic.jpg");
+  background-position: right top;
+  background-color: #5616439d;
+  background-blend-mode: lighten;
+  margin-bottom: 80px;
 }
 
-main, article{
-    padding: 20px;
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100svw;
+  padding: 10px;
+  padding-inline: 15px;
+  box-sizing: border-box;
+  height: 70px;
 }
 
-i{
-    font-family: "Font Awesome 6 Pro";
-    font-style: normal;
+main,
+article {
+  padding: 20px;
 }
 
-button{
-    padding: 10px 5px;
-    width: 100%;
-    font-weight: 700;
-    border-radius: 7px;
-    border: none;
-    border-radius: 18px;
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  15px 15px 31px #d9d9d9,
-             -15px -15px 31px #e7e7e7;
-    cursor: pointer;
-    transition: all 200ms;
+i {
+  font-family: "Font Awesome 6 Pro";
+  font-style: normal;
 }
 
-button:hover{
-    transition: all 1s;
-    border-radius: 18px;
-    background: linear-gradient(225deg, #fbfbfb, #d4d4d4);
-    box-shadow:  -15px 15px 31px #d6d6d6,
-             15px -15px 31px #ffffff;
+button {
+  padding: 10px 5px;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 7px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 15px 15px 31px #d9d9d9, -15px -15px 31px #e7e7e7;
+  cursor: pointer;
+  transition: all 200ms;
 }
 
-::-webkit-scrollbar{
-    width: 4px;
-    background-color: var(--purple);
+button:hover {
+  transition: all 1s;
+  transform: scale(1.05);
+  border-radius: 18px;
+  background: linear-gradient(225deg, #fbfbfb, #d4d4d4);
+  box-shadow: -15px 15px 31px #d6d6d6, 15px -15px 31px #ffffff;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: var(--red-normal);
-    border-radius: 3px}
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--purple);
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--red-normal);
+  border-radius: 3px;
+}

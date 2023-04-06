@@ -7,7 +7,7 @@ function updateTitle() {
     let req = new XMLHttpRequest();
     req.onload = function (e) {
         if (req.status === 200) {
-            np.innerText = req.response.nowplaying;
+            np.textContent = req.response.nowplaying;
             if (listeners !== null)
                 listeners.innerText = req.response.listeners;
             if (nexttrack !== null)
