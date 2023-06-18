@@ -74,7 +74,7 @@ button {
 
 button:hover {
   transition: all 1s;
-  transform: scale(1.05);
+  transform: scale(.95);
   border-radius: 18px;
   background: linear-gradient(225deg, #fbfbfb, #d4d4d4);
   box-shadow: -15px 15px 31px #d6d6d6, 15px -15px 31px #ffffff;

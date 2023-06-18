@@ -1,0 +1,25 @@
+{
+    "short_name": "RED",
+    "name": "Radio Estilo de Dios",
+    "icons": [
+      {
+        "src": "/assets/favicon.ico",
+        "type": "image/s| vg+xml"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "shortcuts": [
+      {
+        "name": "Balsamo de vida",
+        "short_name": "Today",
+        "description": "View weather information for today",
+        "url": "/bv?source=pwa",
+        "icons": [{ "src": "/assets/bg-mic.jpg"}]
+      }
+    ],
+    "description": "Radio online de musica cristiana."
+  }

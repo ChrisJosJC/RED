@@ -36,20 +36,18 @@ const allPrograms = {
     title: "Testing",
     body: "Tu programa esta a punto de iniciar",
     image: "/assets/flyers/bk.jpg",
-    hour: "08:20:00",
-    day: 4,
+    hour: "23:32:00",
+    day: 6,
   },
 };
 
-let users = {
-
-}
-
+let users = {};
 let programsUser = [];
+
 router.post("/subscribe/", (req, res) => {
   const {program, clientId } = req.body;
   programsUser.push(allPrograms[program])
-  programsUser = programsUser.length ==0
+  programsUser = programsUser.length == 0
     ? [...programsUser]
     : Array.from(new Set([...programsUser]))
 

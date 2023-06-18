@@ -37,7 +37,7 @@ async function Notify() {
         },
       });
 
-      navigator.serviceWorker.controller.postMessage(clientId);
+      navigator.serviceWorker.controller.postMessage({clientId});
     }
   });
 }
