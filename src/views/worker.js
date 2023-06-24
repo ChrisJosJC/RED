@@ -49,8 +49,8 @@ const cacheName = `static-${version}`;
 // Static Cache - App Shell
 const appAssets = [
   "/index.html",
-  "/style/main.css",
-  "/style/style.css",
+  "/style/main.min.css",
+  "/style/style.min.css",
   "/js/main.js",
   "/assets/bg-mic.jpg",
   "/assets/flyers/bk.jpg",
